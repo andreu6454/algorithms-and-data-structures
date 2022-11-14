@@ -1,9 +1,9 @@
-const binary_search = (list, item) => {
+const binary_search = (arr, item) => {
     let first = 0;
-    let last = list.length - 1;
+    let last = arr.length - 1;
     while(first <= last) {
         let mid = Math.floor(((first + last) / 2));
-        let tmp = list[mid];
+        let tmp = arr[mid];
         if (tmp === item) {
             return mid;
         }
